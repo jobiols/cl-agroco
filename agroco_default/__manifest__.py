@@ -25,6 +25,12 @@
     'summary': 'Customization para Agrocolombia',
     'author': 'jeo Software',
     'depends': [
+
+        # localizacion colombiana
+        'l10n_co',         # Colombia - Contabilidad
+        'l10n_co_edi',     # Electronic invoicing for Colombia with Carvajal
+        'l10n_co_reports'  # Colombia - informes contables
+
     ],
     'data': [
     ],
@@ -34,21 +40,13 @@
     'application': True,
     'images': [],
 
-    #
-    # Here begins docker-odoo-environment manifest
-    # --------------------------------------------
-
-    # port where odoo starts serving pages
     'port': '8069',
-
     'repos': [
         {'usr': 'jobiols', 'repo': 'cl-agroco', 'branch': '12.0'},
     ],
-
     'docker': [
         {'name': 'odoo', 'usr': 'jobiols', 'img': 'odoo-ent', 'ver': '12.0e'},
         {'name': 'postgres', 'usr': 'postgres', 'ver': '11.1-alpine'},
         {'name': 'nginx', 'usr': 'nginx', 'ver': 'latest'},
     ],
-
 }
