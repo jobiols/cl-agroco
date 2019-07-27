@@ -25,11 +25,6 @@
     'summary': 'Customization para Agrocolombia',
     'author': 'jeo Software',
     'depends': [
-        # basic applications
-        'sale_management',
-        'account_invoicing',
-        'purchase',
-
     ],
     'data': [
     ],
@@ -37,7 +32,6 @@
     ],
     'installable': True,
     'application': True,
-    'auto_install': False,
     'images': [],
 
     #
