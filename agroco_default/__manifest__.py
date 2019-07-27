@@ -20,8 +20,8 @@
 {
     'name': 'Agroco',
     'version': '12.0e.0.0.0',
-    'license': 'Other OSI approved licence',
-    'category': 'Default Application',
+    'license': 'AGPL-3',
+    'category': 'Tools',
     'summary': 'Customization para Agrocolombia',
     'author': 'jeo Software',
     'depends': [
@@ -37,7 +37,7 @@
     'test': [
     ],
     'installable': True,
-    'application': True,
+    'application': False,
     'images': [],
 
     'port': '8069',
